@@ -25,17 +25,21 @@ struct ContactsView: View {
     // MARK: - View Components
     
     private func contactRow(_ contact: Contact) -> some View {
-        VStack(alignment: .leading) {
-            Text(contact.name)
-                .fontWeight(.semibold)
-            
-            Text(contact.phoneNumber)
-                .font(.footnote)
-                .foregroundColor(.gray)
-            
-            Text(contact.location)
-                .font(.footnote)
-                .foregroundColor(.gray)
+        NavigationLink {
+            ContactDetailsView(contact: contact)
+        } label: {
+            VStack(alignment: .leading) {
+                Text(contact.name)
+                    .fontWeight(.semibold)
+                
+                Text(contact.phoneNumber)
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+                
+                Text(contact.location)
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+            }
         }
     }
     

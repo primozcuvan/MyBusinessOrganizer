@@ -10,6 +10,7 @@
 		D89819BD27BE3F4B004A894D /* MyBusinessOrganizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89819AD27BE3F49004A894D /* MyBusinessOrganizerApp.swift */; };
 		D89819BF27BE3F4B004A894D /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89819AE27BE3F49004A894D /* ContactsView.swift */; };
 		D89819C127BE3F4B004A894D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89819AF27BE3F4B004A894D /* Assets.xcassets */; };
+		D8A3907B27BEAA9B00D58504 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A3907A27BEAA9B00D58504 /* ContactDetailsView.swift */; };
 		D8ED984527BE7BF1003A8CE6 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ED984427BE7BF1003A8CE6 /* Contact.swift */; };
 		D8ED984927BE7CB3003A8CE6 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ED984827BE7CB3003A8CE6 /* AppData.swift */; };
 /* End PBXBuildFile section */
@@ -19,6 +20,7 @@
 		D89819AE27BE3F49004A894D /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		D89819AF27BE3F4B004A894D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D89819B427BE3F4B004A894D /* MyBusinessOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBusinessOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A3907A27BEAA9B00D58504 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		D8ED984427BE7BF1003A8CE6 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D8ED984827BE7CB3003A8CE6 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +50,7 @@
 			children = (
 				D89819AD27BE3F49004A894D /* MyBusinessOrganizerApp.swift */,
 				D89819AE27BE3F49004A894D /* ContactsView.swift */,
+				D8A3907A27BEAA9B00D58504 /* ContactDetailsView.swift */,
 				D89819AF27BE3F4B004A894D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A3907B27BEAA9B00D58504 /* ContactDetailsView.swift in Sources */,
 				D8ED984527BE7BF1003A8CE6 /* Contact.swift in Sources */,
 				D89819BF27BE3F4B004A894D /* ContactsView.swift in Sources */,
 				D89819BD27BE3F4B004A894D /* MyBusinessOrganizerApp.swift in Sources */,
