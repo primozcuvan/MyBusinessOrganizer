@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContactsView: View {
+    
+    let contacts: [Contact] = AppData.contacts
+    
     var body: some View {
         NavigationView {
             List {
-                contactRow
-                contactRow
+                ForEach(contacts) { contact in
+                    contactRow(contact)
+                }
             }
             .navigationTitle("Contacts")
         }
@@ -20,16 +24,16 @@ struct ContactsView: View {
     
     // MARK: - View Components
     
-    private var contactRow: some View {
+    private func contactRow(_ contact: Contact) -> some View {
         VStack(alignment: .leading) {
-            Text("John")
+            Text(contact.name)
                 .fontWeight(.semibold)
             
-            Text("12345")
+            Text(contact.phoneNumber)
                 .font(.footnote)
                 .foregroundColor(.gray)
             
-            Text("John's home location")
+            Text(contact.location)
                 .font(.footnote)
                 .foregroundColor(.gray)
         }

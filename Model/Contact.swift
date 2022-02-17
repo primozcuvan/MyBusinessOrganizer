@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Contact {
+struct Contact: Identifiable {
     
     internal var id: String = UUID().uuidString
     internal var name: String
